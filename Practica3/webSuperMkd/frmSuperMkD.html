@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Práctica # 3 - API WEB</title>
+</head>
+<body>
+    <!--Tabla-->
+    <table style="width:80%;" align-items="center" border="2">
+        <!--Fila1-->
+        <tr>
+            <td colspan="4" align="center">
+                Minimercado SúperMkD
+            </td>
+        </tr>
+        <!--Fila2-->
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <!--Fila3-->
+        <tr>
+            <td align="right" width="20%">Nro. Doc. : &nbsp;</td>
+            <td><input id="txtNroDoc" type="text" />&nbsp;</td>
+            <td align="right" width="20%">Nombre : &nbsp;</td>
+            <td><input id="txtNombre" type="text" />&nbsp;</td>
+        </tr>
+        <!--Fila4-->
+        <tr>
+            <td align="right" width="20%">Calsificación. :&nbsp;</td>
+            <td>
+                &nbsp;
+                <select id="cmbClasif">
+                    <option value="10">
+                        Ordinario
+                    </option>
+                    <option value="5">
+                        Especial
+                    </option>
+                    <option value="1">
+                        Preferente
+                    </option>
+                </select>
+            </td>
+            <td align="right" width="20%">Sub Total:&nbsp;</td>
+            <td>&nbsp;<input id="txtSubTotal" type="text" /></td>
+        </tr>
+        <!--Fila5-->
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <!--Fila6-->
+        <tr>
+            <td colspan="2" align="center">
+                <input id="btnLimpiar" type="button" value="Limpiar" />
+            </td>
+            <td colspan="2" align="center">
+                <input id="btnProcesar" type="button" value="Procesar" />
+            </td>
+        </tr>
+        <!--Fila7-->
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <!--Fila8-->
+        <tr>
+            <td align="right" width="20%">Porc.Dscto:&nbsp;</td>
+            <td><input id="txtPorcDesc" type="text" readonly />&nbsp;</td>
+            <td align="right" width="20%">Valor Dscto: &nbsp;</td>
+            <td><input id="txtVrDsc" type="text" readonly />&nbsp;</td>
+        </tr>
+        <!--Fila9-->
+        <tr>
+            <td colspan="2" align="right" width="20%">Valor a Pagar: &nbsp;</td>
+            <td colspan="2"><input id="txtVrAPag" type="text" readonly />&nbsp;</td>
+        </tr>
+    </table>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/crlFrmSuperMkD.js"></script>
+</body>
+</html>
