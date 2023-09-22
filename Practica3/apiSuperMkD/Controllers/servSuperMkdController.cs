@@ -13,6 +13,7 @@ namespace apiSuperMkD.Controllers
 {
     public class servSuperMkdController : ApiController
     {
+        modSuperMkD objModMdo = new modSuperMkD();
         // GET api/<controller>
         public IEnumerable<string> Get()
         {
@@ -27,8 +28,12 @@ namespace apiSuperMkD.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody] string value)
+        public modSuperMkD Post([FromBody] modSuperMkD objModIn)
         {
+            clsOpeMdo objOpe = new clsOpeMdo();
+            objOpe.objModMdo = objModIn;
+            objOpe.hallarDatos();
+            return objModMdo;
         }
 
         // PUT api/<controller>/5

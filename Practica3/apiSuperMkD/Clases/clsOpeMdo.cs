@@ -6,7 +6,7 @@ namespace apiSuperMkD.Clases
 {
     public class clsOpeMdo
     {
-        modSuperMkD objModMdo = new modSuperMkD();
+        public modSuperMkD objModMdo = new modSuperMkD();
         #region Metodos Privados
         private bool Validar()
         {
@@ -59,7 +59,7 @@ namespace apiSuperMkD.Clases
             }
             objModMdo.vrDscto = objModMdo.subTotal * objModMdo.porcDscto / 100;
         }
-        private void hallarDatos()
+        public void hallarDatos()
         {
             if (Validar())
             {
