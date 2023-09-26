@@ -20,7 +20,7 @@ namespace apiSuperMkD.Controllers
             return new string[] { "value1", "value2" };
         }
         //[EnableCors(origins: "http://localhost:numero de puerto de local host", headers: "*", methods: "*")]
-        [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
+        [EnableCors(origins: "https://localhost:44329/", headers: "*", methods: "*")]
         // GET api/<controller>/5
         public string Get(int id)
         {
@@ -28,22 +28,22 @@ namespace apiSuperMkD.Controllers
         }
 
         // POST api/<controller>
-        public modSuperMkD Post([FromBody] modSuperMkD objModIn)
+        public modSuperMkD Post([FromBody] modSuperMkD objModIn)//Discgrepa el in con la guia
         {
             clsOpeMdo objOpe = new clsOpeMdo();
             objOpe.objModMdo = objModIn;
             objOpe.hallarDatos();
-            return objModMdo;
+            return objModMdo;//Discrepa con la guia
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-        }
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

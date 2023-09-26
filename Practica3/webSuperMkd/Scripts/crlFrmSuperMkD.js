@@ -35,3 +35,16 @@ function limpiar() {
     $("#txtVrAPag").val("");
     $("#txtNroDoc").focus();
 }
+
+async function Procesar() {
+    let nroD = $("#txtNroDoc").val();
+    let nom = $("#txtNombre").val();
+    let tipClasif = $("#cmbClasif").val();
+    let vrSubTo = $("#txtSubTotal").val();
+    alert(nroD + "-" + nom + "-" + tipClasif + "-" + vrSubTo);
+
+    let datosOut = {
+        tipoClasif: tipClasif,
+        subTotal: vrSubTo
+    }
+}
